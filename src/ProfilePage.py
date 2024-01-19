@@ -34,6 +34,6 @@ class ProfileHandler(tornado.web.RequestHandler):
         uname = L[2]
         info = D[uname]
         self.render("profilepage.html",
-                    name=info["name"], dateOfBirth=info["dob"],
+                    name=info["name"], dateOfBirth=info["DOB"],
                     email=info["email"])
         
